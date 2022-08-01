@@ -1,0 +1,15 @@
+use Test;
+use inode-dev-devtype;
+
+plan 6;
+
+ok ::('&' ~ $_) ~~ Callable, "has '$_' been imported?"
+  for <inode dev devtype>;
+
+my $io := $?FILE.IO;
+
+isa-ok inode($io),   Int, 'does inode return an Int';
+isa-ok dev($io),     Int, 'does dev return an Int';
+isa-ok devtype($io), Int, 'does devtype return an Int';
+
+# vim: expandtab shiftwidth=4

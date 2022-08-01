@@ -1,0 +1,28 @@
+{
+  "auth": "zef:lizmat",
+  "authors": [
+    "Elizabeth Mattijsen"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Provide inode / dev / devtype for older Rakudos",
+  "license": "Artistic-2.0",
+  "name": "inode-dev-devtype",
+  "perl": "6.d",
+  "provides": {
+    "inode-dev-devtype": "lib/inode-dev-devtype.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/lizmat/inode-dev-devtype.git",
+  "tags": [
+    "IO",
+    "INODE",
+    "DEVICE"
+  ],
+  "test-depends": [
+  ],
+  "version": "0.0.1"
+}
